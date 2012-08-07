@@ -168,7 +168,7 @@
 		
 		/**
 		 * @param float $requestTimeout time in seconds
-		 * @return \PeclMemcached 
+		 * @return PeclMemcached
 		 */
 		public function setTimeout($requestTimeout)
 		{
@@ -204,7 +204,6 @@
 				}
 				
 				$this->alive = true;
-				$this->setTimeout($this->connectTimeout);
 				
 			} catch (BaseException $e) {
 				// bad luck.
